@@ -23,7 +23,10 @@ export async function uploadToCloudinary(buffer, originalname = 'product') {
       {
         folder: 'pocika/quotation-products',
         resource_type: 'image',
-        allowed_formats: ['jpg', 'jpeg', 'png', 'webp']
+        allowed_formats: ['jpg', 'jpeg', 'png', 'webp'],
+        transformation: [
+          { quality: 'auto', fetch_format: 'auto' }
+        ]
       },
       (error, result) => {
         if (error) return reject(error);
