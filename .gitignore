@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Production builds
+dist/
+**/dist/
+build/
+
+# Environment variables
+.env
+.env.*
+*.env
+!.env.example
+
+# Local backup files (never commit these)
+Backend/backups/
+**/backups/*.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Cache
+.cache/
+**/.cache/
